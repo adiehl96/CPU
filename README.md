@@ -3,4 +3,4 @@
 
 ## Usage
 Download and extract this repository. Install HADES, following their instructions. Open the HADES jar file and open the file called CPU. You should see the following:
-![CPU](hades-temp.png)
+![CPU](hades-tmp.png)
