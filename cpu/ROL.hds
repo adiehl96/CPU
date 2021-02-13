@@ -1,0 +1,35 @@
+# hades.models.Design file
+#  
+[name] Rol
+[components]
+hades.models.gates.InvSmall i8 31200 28050 @N 1001 5.0E-9
+hades.models.gates.Xnor2 i7 26550 27450 @N 1001 1.0E-8
+hades.models.rtlib.io.IpinVector B 13800 16800 @N 1001 32 00000000000000000000000000000010_B 1.0E-9 0
+hades.models.rtlib.io.SelectBit i6 24000 24300 @N 1001 32 31 1.0E-8
+hades.models.rtlib.io.IpinVector A 13800 18000 @N 1001 32 00000000000000000000000000011100_B 1.0E-9 0
+hades.models.rtlib.io.SelectBit i5 19200 24300 @N 1001 32 31 1.0E-8
+hades.models.rtlib.io.Subset i4 15600 19950 @N 1001 32 4 0 11100_B 1.0E-8
+hades.models.rtlib.io.SelectBit i3 36300 22800 @N 1001 32 0 1.0E-8
+hades.models.io.Opin overflow 39750 22650 @N 1001 5.0E-9
+hades.models.rtlib.logic.Nor i2 32550 24000 @N 1001 32 0 1.0E-8
+hades.models.io.Opin negative 39750 24600 @N 1001 5.0E-9
+hades.models.rtlib.io.SelectBit i0 32250 26250 @N 1001 32 31 1.0E-8
+hades.models.io.Opin zero 39750 27900 @N 1001 5.0E-9
+hades.models.Design RotateLeft 25800 19800 @N 1001 ./rotatie.hds
+hades.models.io.Opin carry 39750 26550 @N 1001 5.0E-9
+hades.models.rtlib.io.OpinVector result 39600 21000 @N 1001 32 1.0E-9 0
+[end components]
+[signals]
+hades.signals.SignalStdLogic1164 n9 2 i7 Y i8 A 1 2 30150 28650 31200 28650 0 
+hades.signals.SignalStdLogic1164 n8 2 i6 Y i7 A 2 2 24000 24900 24000 28050 2 24000 28050 26550 28050 0 
+hades.signals.SignalStdLogic1164 n7 2 i5 Y i7 B 2 2 19200 24900 19200 29250 2 19200 29250 26550 29250 0 
+hades.signals.SignalStdLogicVector n6 5 2 i4 Y RotateLeft rotation 2 2 15600 20550 15600 21000 2 15600 21000 25800 21000 0 
+hades.signals.SignalStdLogicVector n5 32 2 A Y i4 A 2 2 13800 18000 15600 18000 2 15600 18000 15600 19800 0 
+hades.signals.SignalStdLogicVector n4 32 3 B Y RotateLeft source i5 A 5 2 19200 16800 25050 16800 2 25050 16800 25050 20400 2 25050 20400 25800 20400 2 13800 16800 19200 16800 2 19200 16800 19200 24300 1 19200 16800 
+hades.signals.SignalStdLogic1164 n3 2 i3 Y carry A 2 2 36300 23400 36300 26550 2 36300 26550 39750 26550 0 
+hades.signals.SignalStdLogic1164 n2 2 i2 Y zero A 2 2 34350 25800 34350 27900 2 34350 27900 39750 27900 0 
+hades.signals.SignalStdLogic1164 n1 2 i0 Y negative A 4 2 32250 26850 32250 27300 2 32250 27300 37650 27300 2 37650 27300 37650 24600 2 37650 24600 39750 24600 0 
+hades.signals.SignalStdLogicVector n0 32 6 RotateLeft result result A i0 A i2 A i3 A i6 A 13 2 36300 20400 38400 20400 2 38400 20400 38400 21000 2 38400 21000 39600 21000 2 30600 20400 32250 20400 2 32250 23400 32250 26250 2 34200 20400 34350 20400 2 32250 20400 34200 20400 2 34350 20400 34350 24000 2 34350 20400 36300 20400 2 36300 20400 36300 22800 2 32250 20400 32250 23400 2 32250 23400 24000 23400 2 24000 23400 24000 24300 4 32250 23400 36300 20400 34350 20400 32250 20400 
+hades.signals.SignalStdLogic1164 n10 2 i8 Y overflow A 3 2 33000 28650 39150 28650 2 39150 28650 39150 22650 2 39150 22650 39750 22650 0 
+[end signals]
+[end]

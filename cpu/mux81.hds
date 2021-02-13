@@ -1,0 +1,37 @@
+# hades.models.Design file
+#  
+[name] mux81
+[components]
+hades.models.rtlib.io.IpinVector in7 7200 -11550 @N 1001 32 00000000000000000000000000000010_B 1.0E-9 0
+hades.models.rtlib.io.IpinVector in6 8400 -9900 @N 1001 32 00000000000000000000000000000011_B 1.0E-9 0
+hades.models.rtlib.muxes.Mux21 i4 12000 9000 @N 1001 32 00000000000000000000000000000110_B 1.0E-8
+hades.models.rtlib.io.IpinVector in5 9600 -8100 @N 1001 32 00000000000000000000000000000101_B 1.0E-9 0
+hades.models.rtlib.io.IpinVector in4 10800 -6450 @N 1001 32 00000000000000000000000000000110_B 1.0E-9 0
+hades.models.rtlib.io.IpinVector in3 18000 -4800 @N 1001 32 00000000000000000000000000000101_B 1.0E-9 0
+hades.models.rtlib.muxes.Mux41 i1 17400 3000 @N 1001 32 00000000000000000000000000001000_B 1.0E-8
+hades.models.rtlib.io.IpinVector in2 19200 -3300 @N 1001 32 00000000000000000000000000000111_B 1.0E-9 0
+hades.models.io.Ipin c2 -4200 10200 @N 1001 null U
+hades.models.rtlib.muxes.Mux41 i0 6600 3000 @N 1001 32 00000000000000000000000000000110_B 1.0E-8
+hades.models.rtlib.io.IpinVector in1 20400 -1650 @N 1001 32 00000000000000000000000000000111_B 1.0E-9 0
+hades.models.io.Ipin c1 -4050 4950 @N 1001  U
+hades.models.rtlib.io.IpinVector in0 21600 -150 @N 1001 32 00000000000000000000000000001000_B 1.0E-9 0
+hades.models.io.Ipin c0 -4050 3600 @N 1001  U
+hades.models.rtlib.io.OpinVector result 13800 13800 @N 1001 32 1.0E-9 0
+[end components]
+[signals]
+hades.signals.SignalStdLogicVector n9 32 2 i1 Y i4 A0 3 2 19800 4800 19800 7800 2 19800 7800 14400 7800 2 14400 7800 14400 9000 0 
+hades.signals.SignalStdLogicVector n8 32 2 i0 Y i4 A1 3 2 9000 4800 9000 7200 2 9000 7200 13200 7200 2 13200 7200 13200 9000 0 
+hades.signals.SignalStdLogicVector n7 32 2 in0 Y i1 A0 1 2 21600 -150 21600 3000 0 
+hades.signals.SignalStdLogicVector n6 32 2 in1 Y i1 A1 1 2 20400 -1650 20400 3000 0 
+hades.signals.SignalStdLogicVector n5 32 2 in2 Y i1 A2 1 2 19200 -3300 19200 3000 0 
+hades.signals.SignalStdLogicVector n4 32 2 in3 Y i1 A3 1 2 18000 -4800 18000 3000 0 
+hades.signals.SignalStdLogicVector n3 32 2 in4 Y i0 A0 1 2 10800 -6450 10800 3000 0 
+hades.signals.SignalStdLogicVector n2 32 2 in5 Y i0 A1 1 2 9600 -8100 9600 3000 0 
+hades.signals.SignalStdLogicVector n1 32 2 in6 Y i0 A2 1 2 8400 -9900 8400 3000 0 
+hades.signals.SignalStdLogic1164 n13 2 c2 Y i4 S 1 2 -4200 10200 12000 10200 0 
+hades.signals.SignalStdLogicVector n0 32 2 in7 Y i0 A3 1 2 7200 -11550 7200 3000 0 
+hades.signals.SignalStdLogic1164 n12 3 c0 Y i0 S0 i1 S0 4 2 -4050 3600 1950 3600 2 1950 3600 1950 4200 2 1950 4200 6600 4200 2 6600 4200 17400 4200 1 6600 4200 
+hades.signals.SignalStdLogic1164 n11 3 c1 Y i0 S1 i1 S1 4 2 -4050 4950 5700 4950 2 5700 4950 5700 3600 2 5700 3600 6600 3600 2 6600 3600 17400 3600 1 6600 3600 
+hades.signals.SignalStdLogicVector n10 32 2 i4 Y result A 1 2 13800 10800 13800 13800 0 
+[end signals]
+[end]

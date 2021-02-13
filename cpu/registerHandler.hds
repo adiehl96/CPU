@@ -1,0 +1,38 @@
+# hades.models.Design file
+#  
+[name] RegisterHandler
+[components]
+hades.models.rtlib.io.OpinVector Addr_B1 45000 15600 @N 1001 4 1.0E-9 0
+hades.models.gates.InvSmall i9 7200 8400 @N 1001 5.0E-7
+hades.models.rtlib.io.IpinVector Addr_Dest 9000 7200 @N 1001 4 UUUU_B 1.0E-9 0
+hades.models.rtlib.io.Constant i8 36000 4200 @N 1001 4 1111_B 1.0E-8
+hades.models.rtlib.io.Constant i7 25800 4800 @N 1001 4 0000_B 1.0E-8
+hades.models.rtlib.io.Constant i6 16800 5400 @N 1001 4 1111_B 1.0E-8
+hades.models.rtlib.muxes.Mux21 i5 32400 8400 @N 1001 4 UUUU_B 1.0E-8
+hades.models.rtlib.muxes.Mux21 i4 23400 8400 @N 1001 4 UUUU_B 1.0E-8
+hades.models.io.Ipin fetch 6000 9000 @N 1001 null U
+hades.models.io.Ipin i3 6000 12600 @N 1001 null U
+hades.models.io.Ipin i2 6000 11400 @N 1001 null U
+hades.models.io.Ipin i1 6000 10200 @N 1001 null U
+hades.models.rtlib.muxes.Mux21 i0 13800 7800 @N 1001 4 UUUU_B 1.0E-8
+hades.models.gates.InvSmall i10 10200 8400 @N 1001 5.0E-9
+hades.models.rtlib.io.OpinVector Addr_A1 45000 17400 @N 1001 4 1.0E-9 1
+hades.models.rtlib.io.IpinVector Addr_B 9000 2400 @N 1001 4 UUUU_B 1.0E-8 0
+hades.models.rtlib.io.OpinVector Addr_Dest1 45000 19200 @N 1001 4 1.0E-9 1
+hades.models.rtlib.io.IpinVector Addr_A 9000 4800 @N 1001 4 UUUU_B 1.0E-9 0
+[end components]
+[signals]
+hades.signals.SignalStdLogicVector n9 4 2 i0 Y Addr_Dest1 A 2 2 15600 9600 15600 19200 2 15600 19200 45000 19200 0 
+hades.signals.SignalStdLogic1164 n8 4 i10 Y i0 S i4 S i5 S 9 2 13200 9000 13800 9000 2 12000 9000 13200 9000 2 13200 9000 13200 10800 2 13200 10800 22800 10800 2 22800 10800 22800 9600 2 22800 9600 23400 9600 2 22800 10800 31800 10800 2 31800 10800 31800 9600 2 31800 9600 32400 9600 2 13200 9000 22800 10800 
+hades.signals.SignalStdLogic1164 n7 2 i9 Y i10 A 1 2 9000 9000 10200 9000 0 
+hades.signals.SignalStdLogicVector n6 4 2 i8 Y i5 A1 4 2 37800 6000 37800 7800 2 37800 7800 34800 7800 2 34800 7800 33600 7800 2 33600 7800 33600 8400 0 
+hades.signals.SignalStdLogicVector n5 4 2 i7 Y i4 A1 4 2 27600 6600 27600 7800 2 27600 7800 25800 7800 2 25800 7800 24600 7800 2 24600 7800 24600 8400 0 
+hades.signals.SignalStdLogicVector n4 4 2 i6 Y i0 A1 2 2 18600 7200 15000 7200 2 15000 7200 15000 7800 0 
+hades.signals.SignalStdLogicVector n3 4 2 Addr_B Y i5 A0 4 2 9000 2400 33600 2400 2 33600 2400 33600 7200 2 33600 7200 34800 7200 2 34800 7200 34800 8400 0 
+hades.signals.SignalStdLogicVector n2 4 2 Addr_A Y i4 A0 4 2 9000 4800 24600 4800 2 24600 4800 24600 7200 2 24600 7200 25800 7200 2 25800 7200 25800 8400 0 
+hades.signals.SignalStdLogicVector n1 4 2 Addr_Dest Y i0 A0 3 2 9000 7200 15000 7200 2 15000 7200 16200 7200 2 16200 7200 16200 7800 0 
+hades.signals.SignalStdLogic1164 n0 2 fetch Y i9 A 1 2 6000 9000 7200 9000 0 
+hades.signals.SignalStdLogicVector n11 4 2 i5 Y Addr_B1 A 2 2 34200 10200 34200 15600 2 34200 15600 45000 15600 0 
+hades.signals.SignalStdLogicVector n10 4 2 i4 Y Addr_A1 A 2 2 25200 10200 25200 17400 2 25200 17400 45000 17400 0 
+[end signals]
+[end]

@@ -1,0 +1,28 @@
+# hades.models.Design file
+#  
+[name] Addc
+[components]
+hades.models.rtlib.io.IpinVector B -2100 4200 @N 1001 32 01111111111111111111111111111111_B 1.0E-9 0
+hades.models.rtlib.io.IpinVector A -2100 3000 @N 1001 32 01111111111111111111111111111110_B 1.0E-9 0
+hades.models.rtlib.logic.Nor i4 7650 15000 @N 1001 32 0 1.0E-8
+hades.models.rtlib.io.OpinVector resultaat 17700 12750 @N 1001 32 1.0E-9 0
+hades.models.Design AddOverflow 7650 18600 @N 1001 ./addoverflow.hds
+hades.models.io.Opin overflow 17850 14100 @N 1001 5.0E-9
+hades.models.io.Constant0 i1 12600 2400 @N 1001
+hades.models.io.Opin negative 17850 15300 @N 1001 5.0E-9
+hades.models.rtlib.arith.Addc i0 9900 8100 @N 1001 32 11111111111111111111111111111101_B 1.0E-8
+hades.models.io.Opin zero 17850 18450 @N 1001 5.0E-9
+hades.models.rtlib.io.SelectBit NEGATIVETEST 4350 12900 @N 1001 32 31 1.0E-8
+hades.models.io.Opin carry 17850 16800 @N 1001 5.0E-9
+[end components]
+[signals]
+hades.signals.SignalStdLogic1164 n6 2 i4 Y zero A 4 2 9450 16800 9450 18000 2 9450 18000 16500 18000 2 16500 18000 16500 18450 2 16500 18450 17850 18450 0 
+hades.signals.SignalStdLogic1164 n5 2 NEGATIVETEST Y negative A 2 2 4350 13500 4350 15300 2 4350 15300 17850 15300 0 
+hades.signals.SignalStdLogic1164 n4 2 i0 COUT carry A 3 2 11700 10500 11700 14250 2 11700 14250 11700 16800 2 11700 16800 17850 16800 0 
+hades.signals.SignalStdLogicVector n3 32 5 i0 SUM resultaat A NEGATIVETEST A i4 A AddOverflow Result 9 2 12300 10500 12300 12750 2 12300 12750 17700 12750 2 7200 12750 4350 12750 2 4350 12750 4350 12900 2 12300 12750 9450 12750 2 9450 12750 9450 15000 2 9450 12750 7200 12750 2 7200 12750 7200 20400 2 7200 20400 7650 20400 3 9450 12750 12300 12750 7200 12750 
+hades.signals.SignalStdLogic1164 n2 2 i1 Y i0 CIN 2 2 13800 3000 14100 3000 2 14100 3000 14100 8100 0 
+hades.signals.SignalStdLogicVector n1 32 3 B Y i0 B AddOverflow B 5 2 -1500 4200 13500 4200 2 13500 4200 13500 8100 2 -2100 4200 -1500 4200 2 -1500 4200 -1500 19800 2 -1500 19800 7650 19800 1 -1500 4200 
+hades.signals.SignalStdLogicVector n0_0 32 3 A Y i0 A AddOverflow A 5 2 -1800 3000 11100 3000 2 11100 3000 11100 8100 2 -2100 3000 -1800 3000 2 -1800 3000 -1800 19200 2 -1800 19200 7650 19200 1 -1800 3000 
+hades.signals.SignalStdLogic1164 n0 2 AddOverflow Overflow overflow A 3 2 12450 19200 17550 19200 2 17550 19200 17550 14100 2 17550 14100 17850 14100 0 
+[end signals]
+[end]

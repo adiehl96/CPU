@@ -1,0 +1,18 @@
+hades.symbols.BboxRectangle  0 0 4800 4200
+hades.symbols.Rectangle  0 0 4800 4200
+hades.symbols.PortLabel 4650 750 3 i4
+hades.symbols.PortSymbol 4800 600 i4
+hades.symbols.PortLabel 150 3750 CLOCK
+hades.symbols.PortSymbol 0 3600 CLOCK
+hades.symbols.PortLabel 150 3150 nReset
+hades.symbols.PortSymbol 0 3000 nReset
+hades.symbols.PortLabel 150 2550 execute
+hades.symbols.PortSymbol 0 2400 execute
+hades.symbols.PortLabel 150 1950 fetch
+hades.symbols.PortSymbol 0 1800 fetch
+hades.symbols.PortLabel 150 1350 Register
+hades.symbols.PortSymbol 0 1200 Register
+hades.symbols.PortLabel 150 750 ALU_Result
+hades.symbols.PortSymbol 0 600 ALU_Result
+hades.symbols.InstanceLabel 150 4050 addressbusHandler
+hades.symbols.ClassLabel 150 450 addressbusHandler

@@ -1,0 +1,31 @@
+# hades.models.Design file
+#  
+[name] addressbusHandler
+[components]
+hades.models.rtlib.io.IpinVector ALU_Result 9000 1200 @N 1001 32 00000000000000000000000000000001_B 1.0E-9 0
+hades.models.io.Ipin fetch 6000 3600 @N 1001 null U
+hades.models.io.Ipin nReset 6000 6000 @N 1001  U
+hades.models.gates.InvSmall i5 7200 6600 @N 1001 5.0E-7
+hades.models.rtlib.io.OpinVectorLarge i4 18600 12600 @N 1001 32 1.0E-9 0
+hades.models.gates.InvSmall i3 10200 3000 @N 1001 5.0E-9
+hades.models.gates.InvSmall i2 7200 3000 @N 1001 5.0E-9
+hades.models.rtlib.register.RegRE i1 20400 1200 @N 1001 32 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX_B 1.0E-8
+hades.models.rtlib.muxes.Mux21 i0 14400 7800 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-8
+hades.models.rtlib.io.IpinVector Register 9000 2400 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-9 0
+hades.models.io.Ipin execute 6000 4800 @N 1001 null U
+hades.models.io.Ipin CLOCK 6000 7200 @N 1001 null U
+[end components]
+[signals]
+hades.signals.SignalStdLogicVector n9 32 2 i0 Y i4 A 2 2 16200 9600 16200 12600 2 16200 12600 18600 12600 0 
+hades.signals.SignalStdLogic1164 n8 2 i3 Y i0 S 3 2 12000 3600 13200 3600 2 13200 3600 13200 9000 2 13200 9000 14400 9000 0 
+hades.signals.SignalStdLogic1164 n7 2 i2 Y i3 A 1 2 9000 3600 10200 3600 0 
+hades.signals.SignalStdLogicVector n6 32 2 i1 Q i0 A0 2 2 22200 3600 22200 7800 2 22200 7800 16800 7800 0 
+hades.signals.SignalStdLogic1164 n5 2 nReset Y i1 NR 2 2 6000 6000 20400 6000 2 20400 6000 20400 3000 0 
+hades.signals.SignalStdLogic1164 n4 2 i5 Y i1 CLK 3 2 19800 7200 19800 2400 2 19800 2400 20400 2400 2 19800 7200 9000 7200 0 
+hades.signals.SignalStdLogic1164 n3 2 execute Y i1 ENA 3 2 6000 4800 19200 4800 2 19200 4800 19200 1800 2 19200 1800 20400 1800 0 
+hades.signals.SignalStdLogic1164 n2 2 fetch Y i2 A 1 2 6000 3600 7200 3600 0 
+hades.signals.SignalStdLogicVector n1 32 2 Register Y i0 A1 2 2 9000 2400 15600 2400 2 15600 2400 15600 7800 0 
+hades.signals.SignalStdLogicVector n0 32 2 ALU_Result Y i1 D 1 2 9000 1200 22200 1200 0 
+hades.signals.SignalStdLogic1164 n10 2 CLOCK Y i5 A 1 2 6000 7200 7200 7200 0 
+[end signals]
+[end]

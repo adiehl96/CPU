@@ -1,0 +1,12 @@
+hades.symbols.BboxRectangle  0 0 4800 2400
+hades.symbols.Rectangle  0 0 4800 2400
+hades.symbols.PortLabel 4650 750 3 Overflow
+hades.symbols.PortSymbol 4800 600 Overflow
+hades.symbols.PortLabel 150 1950 Result
+hades.symbols.PortSymbol 0 1800 Result
+hades.symbols.PortLabel 150 1350 B
+hades.symbols.PortSymbol 0 1200 B
+hades.symbols.PortLabel 150 750 A
+hades.symbols.PortSymbol 0 600 A
+hades.symbols.InstanceLabel 150 2250 AddOverflow
+hades.symbols.ClassLabel 150 450 AddOverflow

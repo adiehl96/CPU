@@ -1,0 +1,19 @@
+# hades.models.Design file
+#  
+[name] fTest
+[components]
+hades.models.rtlib.io.SelectBit i6 12750 6450 @N 1001 32 27 1.0E-8
+hades.models.rtlib.io.SelectBit i5 10500 9150 @N 1001 32 31 1.0E-8
+hades.models.rtlib.io.IpinVector Instruction 9000 3000 @N 1001 32 01111111111111111111111111111111_B 1.0E-9 0
+hades.models.io.Constant0 i3 13500 7500 @N 1001
+hades.models.gates.Mux21 i1 15900 7500 @N 1001 1.0E-8
+hades.models.io.Opin i0 22800 12450 @N 1001 5.0E-9
+[end components]
+[signals]
+hades.signals.SignalStdLogic1164 n4 2 i1 Y i0 A 3 2 18300 8700 22200 8700 2 22200 8700 22200 12450 2 22200 12450 22800 12450 0 
+hades.signals.SignalStdLogic1164 n3 2 i3 Y i1 A1 1 2 14700 8100 15900 8100 0 
+hades.signals.SignalStdLogic1164 n2 2 i6 Y i1 A0 3 2 12750 7050 12750 8100 2 12750 8100 12750 9300 2 12750 9300 15900 9300 0 
+hades.signals.SignalStdLogic1164 n1 2 i5 Y i1 S 3 2 10500 9750 10500 10200 2 10500 10200 17100 10200 2 17100 10200 17100 9900 0 
+hades.signals.SignalStdLogicVector n0 32 3 Instruction Y i5 A i6 A 4 2 9000 3000 10500 3000 2 10500 3000 10500 9150 2 10500 3000 12750 3000 2 12750 3000 12750 6450 1 10500 3000 
+[end signals]
+[end]

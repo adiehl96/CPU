@@ -1,0 +1,24 @@
+# hades.models.Design file
+#  
+[name] unnamed
+[components]
+hades.models.io.Opin halt_monitor 18000 13800 @N 1001 5.0E-9
+hades.models.rtlib.io.OpinVector Data_monitor 31800 21600 @N 1001 32 1.0E-9 0
+hades.models.io.Ipin i1 4800 14400 @N 1001 null U
+hades.models.io.Ipin i0 4800 15600 @N 1001 null U
+hades.models.Design unnamed 22200 13800 @N 1001 ./ram.hds
+hades.models.Design CPU_van_David_N._Jansen 11400 13200 @N 1001 ./CPU.hds
+hades.models.rtlib.io.OpinVector dout_monitor 31800 14400 @N 1001 32 1.0E-9 1
+hades.models.rtlib.io.OpinVector adress_monitor 31800 20400 @N 1001 32 1.0E-9 0
+[end components]
+[signals]
+hades.signals.SignalStdLogicVector n9 32 3 unnamed i11 dout_monitor A CPU_van_David_N._Jansen DATABUS_IN 6 2 28800 14400 31800 14400 2 27000 14400 28800 14400 2 28800 14400 28800 10800 2 28800 10800 9600 10800 2 9600 10800 9600 13800 2 9600 13800 11400 13800 1 28800 14400 
+hades.signals.SignalStdLogic1164 n8 2 CPU_van_David_N._Jansen nWE unnamed nWE 1 2 16200 16200 22200 16200 0 
+hades.signals.SignalStdLogic1164 n7 2 CPU_van_David_N._Jansen nRE unnamed nRE 1 2 16200 15600 22200 15600 0 
+hades.signals.SignalStdLogic1164 n4 2 CPU_van_David_N._Jansen HALTED halt_monitor A 1 2 16200 13800 18000 13800 0 
+hades.signals.SignalStdLogic1164 n3 2 i0 Y CPU_van_David_N._Jansen nRESET 3 2 4800 15600 5400 15600 2 5400 15600 5400 15000 2 5400 15000 11400 15000 0 
+hades.signals.SignalStdLogic1164 n2 2 i1 Y CPU_van_David_N._Jansen CLOCK 1 2 4800 14400 11400 14400 0 
+hades.signals.SignalStdLogicVector n0 32 3 CPU_van_David_N._Jansen ADDRESSBUS unnamed Adressbus adress_monitor A 4 2 17400 14400 22200 14400 2 16200 14400 17400 14400 2 17400 14400 17400 20400 2 17400 20400 31800 20400 1 17400 14400 
+hades.signals.SignalStdLogicVector n1_0 32 3 CPU_van_David_N._Jansen DATABUS_OUT unnamed Databus Data_monitor A 6 2 17400 15000 22200 15000 2 16200 15000 16800 15000 2 16800 15000 16800 18600 2 16800 15000 17400 15000 2 16800 18600 16800 21600 2 16800 21600 31800 21600 1 16800 15000 
+[end signals]
+[end]

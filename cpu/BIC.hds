@@ -1,0 +1,29 @@
+# hades.models.Design file
+#  
+[name] Bic
+[components]
+hades.models.rtlib.io.IpinVector B -4500 4050 @N 1001 32 00000000000000000000000000001111_B 1.0E-9 2
+hades.models.rtlib.io.IpinVector A -4500 2250 @N 1001 32 11111111111111111111111111111111_B 1.0E-9 2
+hades.models.rtlib.io.SelectBit i5 -1950 17700 @N 1001 32 31 1.0E-8
+hades.models.rtlib.logic.Nor i4 2550 17550 @N 1001 32 0 1.0E-8
+hades.models.io.Constant0 i3 5850 21150 @N 1001
+hades.models.rtlib.logic.BitwiseXor i2 -750 7650 @N 1001 32 11111111111111111111111111110000_B 1.0E-8
+hades.models.io.Opin overflow 12600 19350 @N 1001 5.0E-9
+hades.models.rtlib.io.Constant i1 2250 4650 @N 1001 32 11111111111111111111111111111111_B 1.0E-8
+hades.models.io.Opin negative 12600 20700 @N 1001 5.0E-9
+hades.models.rtlib.logic.BitwiseAnd i0 6150 14700 @N 1001 32 11111111111111111111111111110000_B 1.0E-8
+hades.models.io.Opin zero 12600 23100 @N 1001 5.0E-9
+hades.models.io.Opin carry 12600 21900 @N 1001 5.0E-9
+hades.models.rtlib.io.OpinVectorLarge result 9600 18000 @N 1001 32 1.0E-9 2
+[end components]
+[signals]
+hades.signals.SignalStdLogic1164 n7 2 i5 Y negative A 2 2 -1950 18300 -1950 20700 2 -1950 20700 12600 20700 0 
+hades.signals.SignalStdLogic1164 n5 2 i4 Y zero A 2 2 4350 19350 4350 23100 2 4350 23100 12600 23100 0 
+hades.signals.SignalStdLogicVector n4 32 4 i0 Y result A i4 A i5 A 7 2 7950 16950 7950 18000 2 7950 18000 9600 18000 2 7950 16500 7950 16950 2 7950 16950 4350 16950 2 4350 16950 4350 17550 2 4350 16950 -1950 16950 2 -1950 16950 -1950 17700 2 7950 16950 4350 16950 
+hades.signals.SignalStdLogicVector n3 32 2 i2 Y i0 A 3 2 1050 9450 1050 10650 2 1050 10650 7350 10650 2 7350 10650 7350 14700 0 
+hades.signals.SignalStdLogicVector n2 32 2 A Y i0 B 2 2 -4500 2250 8550 2250 2 8550 2250 8550 14700 0 
+hades.signals.SignalStdLogicVector n1 32 2 B Y i2 A 2 2 -4500 4050 450 4050 2 450 4050 450 7650 0 
+hades.signals.SignalStdLogicVector n0 32 2 i1 Y i2 B 3 2 4050 6450 4050 7200 2 4050 7200 1650 7200 2 1650 7200 1650 7650 0 
+hades.signals.SignalStdLogic1164 n5_0 4 i3 Y i3 Y overflow A carry A 6 2 11550 21750 11550 21600 2 11550 21600 11550 19350 2 11550 19350 12600 19350 2 7050 21750 11550 21750 2 11550 21750 11550 21900 2 11550 21900 12600 21900 1 11550 21750 
+[end signals]
+[end]

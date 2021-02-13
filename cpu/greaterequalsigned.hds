@@ -1,0 +1,15 @@
+# hades.models.Design file
+#  
+[name] GE
+[components]
+hades.models.io.Opin GE 22800 4800 @N 1001 5.0E-9
+hades.models.gates.Xnor2 i0 13800 3600 @N 1001 1.0E-8
+hades.models.io.Ipin O 10200 5400 @N 1001 null U
+hades.models.io.Ipin N 10200 4200 @N 1001 null U
+[end components]
+[signals]
+hades.signals.SignalStdLogic1164 n2 2 i0 Y GE A 1 2 17400 4800 22800 4800 0 
+hades.signals.SignalStdLogic1164 n1 2 O Y i0 B 1 2 10200 5400 13800 5400 0 
+hades.signals.SignalStdLogic1164 n0 2 N Y i0 A 1 2 10200 4200 13800 4200 0 
+[end signals]
+[end]

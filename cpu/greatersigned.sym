@@ -1,0 +1,12 @@
+hades.symbols.BboxRectangle  0 0 4800 2400
+hades.symbols.Rectangle  0 0 4800 2400
+hades.symbols.PortLabel 4650 750 3 G
+hades.symbols.PortSymbol 4800 600 G
+hades.symbols.PortLabel 150 1950 O
+hades.symbols.PortSymbol 0 1800 O
+hades.symbols.PortLabel 150 1350 N
+hades.symbols.PortSymbol 0 1200 N
+hades.symbols.PortLabel 150 750 Z
+hades.symbols.PortSymbol 0 600 Z
+hades.symbols.InstanceLabel 150 2250 G
+hades.symbols.ClassLabel 150 450 G
